@@ -1,0 +1,46 @@
+{
+  "name": "nodejs-typescript-esbuild-pnpm-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --fix",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js --format=esm",
+    "dev:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:node": "node --watch dist/index.js",
+    "dev:esbuild": "pnpm run build --watch",
+    "dev": "run-p dev:*",
+    "start": "node dist/index.js",
+    "prepare": "husky install",
+    "prepare-commit": "git-cz",
+    "test": "echo 'test not written'"
+  },
+  "config": {
+      "commitizen": {
+        "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.ts": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^18.0.0",
+    "@commitlint/config-conventional": "^18.0.0",
+    "@commitlint/cz-commitlint": "^18.0.0",
+    "@types/node": "^20.8.7",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "commitizen": "^4.3.0",
+    "esbuild": "^0.19.5",
+    "eslint": "^8.52.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.0.2",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.2.2"
+  }
+}
