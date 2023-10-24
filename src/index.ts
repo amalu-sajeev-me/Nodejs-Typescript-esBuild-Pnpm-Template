@@ -1,6 +1,7 @@
-import '../bin/config.ts';
+import '../bin/config';
+import { LoggerAdapter } from '../adapters/logger.adapter';
+// import '@bin/config';
 import { container } from 'tsyringe';
-import { LoggerAdapter } from '../adapters/logger.adapter.ts';
 
 (function main() {
     const scream = container.resolve(LoggerAdapter);
