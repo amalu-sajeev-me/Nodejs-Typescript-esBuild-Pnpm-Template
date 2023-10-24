@@ -1,6 +1,6 @@
-import './ioc.register';
-import type { IEnvVariables } from "./env.schema";
-import { envProxy } from './EnvValidator';
+import './ioc.register.ts';
+import type { IEnvVariables } from "./env.schema.ts";
+import { envProxy } from './EnvValidator.ts';
 
 declare global {
 /* eslint-disable @typescript-eslint/no-namespace */

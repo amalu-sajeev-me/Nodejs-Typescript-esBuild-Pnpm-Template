@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { container } from 'tsyringe';
-import { LoggerAdapter } from 'adapters/logger.adapter.js';
-import { envSchema } from './env.schema';
+import { LoggerAdapter } from '../adapters/logger.adapter.ts';
+import { envSchema } from './env.schema.ts';
 
 class EnvValidator{
     private static scream = container.resolve(LoggerAdapter);
