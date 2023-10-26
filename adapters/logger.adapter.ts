@@ -20,9 +20,10 @@ export class LoggerAdapter implements ILogger {
     }
 
     private formatMessage(message: string, context?: string): string{
-        const contextString = context ? ` [${context}]` : '';
+        const contextString = context ? `[${context}]` : ''; // Remove extra space
         return `${message} ::: ${contextString}`;
     }
+
 
     debug(message: string, context?: string): void {
         this.logger.debug(this.formatMessage(message, context));
