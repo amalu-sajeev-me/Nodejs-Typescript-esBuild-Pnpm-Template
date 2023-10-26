@@ -76,6 +76,7 @@
   },
   "_moduleAliases": {
     "@bin": "dist/bin",
-    "@adapters": "dist/adapters"
+    "@adapters": "dist/adapters",
+    "@utils": "dist/src/utils"
   }
 }
