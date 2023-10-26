@@ -11,7 +11,7 @@ jobs:
         with:
           node-version: v18.18.1
       - name: Setup TypeScript
-        uses: Tyler887/TypeScript-GitHub-Actions@1.0
+        run: npm i -g typescript
       - name: build
         run: tsc -p ./tsconfig.json
       - name: Setup pnpm
@@ -19,6 +19,4 @@ jobs:
         with:
           run_install: true
       - name: Install Dependancies
-        run: pnpm Install
-      - name: Run tests
-        run: pnpm test
+        run: pnpm it
