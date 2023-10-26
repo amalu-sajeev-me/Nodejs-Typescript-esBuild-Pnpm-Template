@@ -1,9 +1,13 @@
 {
   "name": "nodejs-typescript-swc-pnpm-template",
   "version": "1.0.0",
+  "engines": {
+    "node": "v18.18.1",
+    "vscode": "^1.22.0"
+  },
   "type": "commonjs",
-  "description": "",
-  "main": "index.js",
+  "description": "A template repository for future projects",
+  "main": "dist/src/index.js",
   "scripts": {
     "lint": "npx eslint --fix",
     "build": "npx tsc -p ./tsconfig.json",
@@ -23,8 +27,15 @@
     "*.js": "eslint",
     "*.ts": "eslint"
   },
-  "keywords": ["template", "pnpm", "nodejs", "typescript"],
-  "author": "Amalu Sajeev",
+  "keywords": ["template", "pnpm", "nodejs", "typescript", "swc"],
+  "author": {
+    "name": "Amalu Sajeev",
+    "email": "amalu.sajeev.me@gmail.com",
+    "url": "https://github.com/amalu-sajeev-me/"
+  },
+  "bugs": {
+    "url": "https://github.com/amalu-sajeev-me/Nodejs-Typescript-esBuild-Pnpm-Template/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
