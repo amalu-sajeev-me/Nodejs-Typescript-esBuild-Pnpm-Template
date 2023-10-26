@@ -10,7 +10,10 @@ jobs:
         uses: actions/setup-node@v4.0.0
         with:
           node-version: v18.18.1
-      - name: Install deps
-        run: npm install
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+          run_install: |
+            - recursive: true
       - name: test
-        run: npm test
+        run: pnpm test
