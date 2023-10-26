@@ -11,6 +11,6 @@ jobs:
         with:
           node-version: v18.18.1
       - name: Install deps
-        run: npm ci
+        run: npm install
       - name: test
         run: npm test
