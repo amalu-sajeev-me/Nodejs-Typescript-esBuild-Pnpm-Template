@@ -5,6 +5,7 @@
     "node": "v18.18.1",
     "vscode": "^1.22.0"
   },
+  "packageManager": "pnpm@8.9.2",
   "type": "commonjs",
   "description": "A template repository for future projects",
   "main": "dist/src/index.js",
