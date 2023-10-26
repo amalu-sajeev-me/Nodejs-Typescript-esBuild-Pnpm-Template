@@ -12,6 +12,8 @@ jobs:
           node-version: v18.18.1
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.4.0
+        with:
+          run_install: true
       - name: Install Dependancies
         run: pnpm Install
       - name: Run tests
