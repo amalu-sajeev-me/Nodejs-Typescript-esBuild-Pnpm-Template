@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { container } from 'tsyringe';
-import { LoggerAdapter } from '../adapters/logger.adapter';
+import { LoggerAdapter } from '../src/adapters/logger.adapter';
 import { envSchema } from './env.schema';
 
 class EnvValidator{

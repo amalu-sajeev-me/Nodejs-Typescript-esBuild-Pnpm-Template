@@ -27,7 +27,7 @@
                 "./bin/*.ts"
             ],
             "@adapters/*": [
-                "./adapters/*.ts"
+                "./src/adapters/*.ts"
             ],
             "@utils/*": [
                 "./src/utils/*.ts"
@@ -46,7 +46,7 @@
     "include": [
         "src/**/*",
         "bin/**/*",
-        "adapters/**/*"
+        "src/adapters/**/*"
     ],
     "exclude": [
         "**/*.test.*",

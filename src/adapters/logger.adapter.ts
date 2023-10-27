@@ -1,6 +1,6 @@
 import { type Logger, type LoggerOptions, pino } from 'pino';
 import { injectable, singleton } from 'tsyringe';
-import type { ILogger } from './logger.types.ts';
+import type { ILogger } from './logger.types.js';
 
 @singleton()
 @injectable()
