@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import '@bin/config';
 import { LoggerAdapter } from '@adapters/logger.adapter';
 import { EnvironmentUtil } from '@utils/EnvironmentUtil';
