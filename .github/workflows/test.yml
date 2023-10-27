@@ -15,7 +15,6 @@ jobs:
           version: 8
           run_install: |
             - recursive: false
-            args: 
-              - --no-bail
+            - args: [--no-bail]
       - name: test
         run: pnpm test
