@@ -1,4 +1,5 @@
-import { EnvironmentUtil } from '@utils/EnvironmentUtil';
+
+import { EnvironmentUtil } from '../EnvironmentUtil';
 
 describe('EnvironmentUtil', () => {
   // Set NODE_ENV before running the tests
