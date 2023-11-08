@@ -10,8 +10,8 @@
   "description": "A template repository for future projects",
   "main": "dist/src/index.js",
   "scripts": {
-    "lint": "pnpm dlx eslint .",
-    "lint:fix": "pnpm lint --fix",
+    "lint": "eslint .",
+    "lint:fix": "npm lint --fix",
     "build": "pnpm dlx tsc -p ./tsconfig.json",
     "dev": "nodemon ./src/index.ts",
     "start": "pnpm build && node -r dotenv/config dist/src/index.js",
